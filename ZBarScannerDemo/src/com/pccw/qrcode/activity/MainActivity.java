@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
 	
 	private Button goToVoteButton;
 	
+	
 	private String scanResult;
 	
 
