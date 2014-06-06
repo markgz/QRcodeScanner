@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="5dp" >
+    
+    
+    <TextView 
+        android:id="@+id/user_info_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Infomation:"
+        android:textColor="@android:color/background_dark"
+        />
+
+    <Button
+        android:id="@+id/qrscan_btn"
+        android:layout_marginTop="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="launchQRScanner"
+        android:text="@string/scan_only_qr_codes" />
+    
+    
+    <Button 
+        android:id="@+id/go_to_vote_button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to vote"
+        android:layout_gravity="bottom|right"
+        android:visibility="gone"
+        android:onClick="goToVote"
+        />
+
+</LinearLayout>
